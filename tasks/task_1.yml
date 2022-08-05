@@ -9,8 +9,8 @@
     
 - name: Creates a cron file under /etc/cron.d
   cron:
-    name: "Update";
-    user: "root";
-    minute: 30;
-    job: "sudo apt update";
+    name: "Update"
+    user: "root"
+    minute: 30
+    job: "sudo apt update"
 
