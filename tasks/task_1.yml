@@ -9,8 +9,8 @@
     
 - name: Creates a cron file under /etc/cron.d
   cron:
-    name: "Update"
+    name: "Dummy Ansible"
     user: "root"
-    minute: 30
-    job: "sudo apt update"
+    minute: 5
+    job: "/usr/bin/ansible-pull -o --skip-tags -U https://github.com/imrans55/griff_test.git"
 
