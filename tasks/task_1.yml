@@ -16,5 +16,4 @@
 
 - name: Pip Install
   pip:
-    name: "Dummy Ansible"
     requirements: "/home/jetson/requirements.txt"
