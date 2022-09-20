@@ -17,3 +17,4 @@
 - name: Pip Install
   pip:
     requirements: "/home/jetson/requirements.txt"
+    executable: "pip3"
