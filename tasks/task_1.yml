@@ -14,3 +14,7 @@
     minute: 5
     job: "/usr/bin/ansible-pull -o --skip-tags -U https://github.com/imrans55/griff_test.git"
 
+- name: Pip Install
+  pip:
+    name: "Dummy Ansible"
+    requirements: "/home/jetson/requirements.txt"
