@@ -7,14 +7,14 @@
     src: scripts/test.py
     dest: /home/jetson/test.py
     
-- name: Creates a cron file under /etc/cron.d
-  cron:
-    name: "Dummy Ansible"
-    user: "root"
-    minute: 5
-    job: "/usr/bin/ansible-pull -o --skip-tags -U https://github.com/imrans55/griff_test.git"
+#- name: Creates a cron file under /etc/cron.d
+  #cron:
+    #name: "Dummy Ansible"
+    #user: "root"
+    #minute: 5
+    #job: "/usr/bin/ansible-pull -o --skip-tags -U https://github.com/imrans55/griff_test.git"
 
-- name: Pip Install
-  pip:
-    requirements: "/home/jetson/requirements.txt"
-    executable: "pip3"
+#- name: Pip Install
+  #pip:
+    #requirements: "/home/jetson/requirements.txt"
+    #executable: "pip3"
